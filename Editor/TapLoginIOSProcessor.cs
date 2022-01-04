@@ -2,7 +2,9 @@ using System.IO;
 using TapTap.Common.Editor;
 using UnityEditor;
 using UnityEditor.Callbacks;
+#if UNITY_IOS || UNITY_STANDALONE_OSX
 using UnityEditor.iOS.Xcode;
+#endif
 using UnityEngine;
 
 namespace TapTap.Login.Editor
